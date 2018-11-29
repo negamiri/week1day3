@@ -1,13 +1,3 @@
-function findWaldo(arr, found) {
-  for (var i = 0; i < arr.length; i++) {
-    if (arr[i] === "Waldo") {
-      found();   // execute callback
-    }
-  }
-}
-
-function actionWhenFound() {
-  console.log("Found him!");
-}
-
-findWaldo(["Alice", "Bob", "Waldo", "Winston"], actionWhenFound);
+var numbers = [1, 4, 9];
+var roots = numbers.map(Math.sqrt);
+console.log(roots);
